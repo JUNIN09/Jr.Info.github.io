@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jr.Info</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <nav> 
+        <div class="container">
+            <h1>
+                <a href="index.html">
+                    <img src="img/gsw1.svg" alt="minha logo" width="100">
+                </a>
+            </h1>
+            <div class="navbar">
+                <div class="dropdown">
+                  <button class="dropbtn">CONTA
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="conta.html">Minha Conta</a>
+                    <a href="pedido.html">Meus Pedidos</a>
+                    <a href="contato.html">Contato</a>
+                  </div>
+                </div>
+                <a href="carrinho.html">CARRINHO</a>
+                <a href="index.html">HOME</a>    
+            </div>    
+        </div>
+    </nav>
+
+    <main>
+            <div id="abert">
+                    <img src="img/205-1024x576.jpg" alt="" >
+                    <div id="dividir"></div>
+                </div>
+
+        <div class="container">
+            <div class="col-12">
+                <form id="form1">
+                    <label for="nome">Informe seu Nome</label>
+                    <input type="text" name="nome" id="nome"
+                    placeholder="Informe seu Nome" required="true">
+    
+                    <label for="email">Informe seu E-mail</label>
+                    <input type="email" name="email" id="email"
+                    placeholder="Informe seu E-mail" required="true">
+    
+                    <label>Informe sua Turma</label>
+                    <div class="form-group">
+                        <input type="radio" name="turma" id="turma_1A"
+                        value="1A" checked>
+                        <label for="turma_1A">1A</label>
+                        <input type="radio" name="turma" id="turma_1B"
+                        value="1B" checked>
+                        <label for="turma_1B">1B</label>
+                    </div>
+    
+                    <label for="nome">Motivo</label>
+                    <select name="motivo" id="motivo" required>
+                        <option value="">Selecione o Motivo</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugesão">Sugestão</option>
+                        <option value="problema">Problema</option>
+                        <option value="outro">Outro</option>
+                    </select>
+    
+                    <label for="mensagem">Informe sua Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="7"></textarea>
+    
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("wT9Ds7ZSOBoTucs0K");
+    })();
+    </script>
+    <footer>
+        <div class="container clearfix">
+            <div class="soc1">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <div class="foo">
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                    </div>
+                    <div class="foo">
+                        <li><a href="https://twitter.com/TwitterBrasil?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a></li>
+                    </div>
+                    <div class="foo">
+                        <li><a href="https://www.youtube.com/">Youtube</a></li>
+                    </div>
+                    <div class="foo">
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+     
+</body>
+<script src="js/script.js"></script>
+
+</html>
